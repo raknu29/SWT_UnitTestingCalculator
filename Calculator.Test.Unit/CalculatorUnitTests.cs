@@ -6,7 +6,6 @@ using NUnit.Framework;
 namespace Calculator.Test.Unit
 {
     [TestFixture]
-    [Author("Troels Jensen")]
     public class CalculatorUnitTests
     {
         private Calculator _uut;
@@ -31,7 +30,6 @@ namespace Calculator.Test.Unit
         [TestCase(-3, -2, -1)]
         [TestCase(-3, 2, -5)]
         [TestCase(3, -2, 5)]
-        [TestCase(3, -2, 11)]
         public void Subtract_SubtractPosAndNegNumbers_ResultIsCorrect(int a, int b, int result)
         {
             Assert.That(_uut.Subtract(a, b), Is.EqualTo(result));
