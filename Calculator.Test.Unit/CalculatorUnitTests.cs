@@ -16,10 +16,10 @@ namespace Calculator.Test.Unit
             _uut = new Calculator();
         }
 
-        [TestCase(3, 2, 5)]
-        [TestCase(-3, -2, -5)]
-        [TestCase(-3, 2, -1)]
-        [TestCase(3, -2, 1)]
+        //[TestCase(3, 2, 5)]
+        //[TestCase(-3, -2, -5)]
+        //[TestCase(-3, 2, -1)]
+        //[TestCase(3, -2, 1)]
         public void Add_AddPosAndNegNumbers_ResultIsCorrect(int a, int b, int result)
         {
             Assert.That(_uut.Add(a, b), Is.EqualTo(result));
